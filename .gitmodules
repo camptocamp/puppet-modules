@@ -1,3 +1,0 @@
-[submodule "puppet-mcollective"]
-	path = puppet-mcollective
-	url = git@github.com:camptocamp/puppet-mcollective.git
