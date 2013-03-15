@@ -2,6 +2,10 @@
 
 These modules are provided by [Camptocamp](http://www.camptocamp.com/)
 
+## Module list
+
+* [Mcollective](https://github.com/camptocamp/puppet-mcollective)
+
 ## License
 
 Copyright (c) 2012 <mailto:puppet@camptocamp.com> All rights reserved.
