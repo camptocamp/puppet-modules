@@ -5,6 +5,7 @@ These modules are provided by [Camptocamp](http://www.camptocamp.com/)
 ## Module list
 
 * [Mcollective](https://github.com/camptocamp/puppet-mcollective)
+* [Augeas](https://github.com/camptocamp/puppet-augeas)
 
 ## Contributing
 
