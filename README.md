@@ -4,8 +4,8 @@ These modules are provided by [Camptocamp](http://www.camptocamp.com/)
 
 ## Module list
 
-* [Mcollective](https://github.com/camptocamp/puppet-mcollective)
-* [Augeas](https://github.com/camptocamp/puppet-augeas)
+* [Mcollective](https://github.com/camptocamp/puppet-mcollective) ([Forge](http://forge.puppetlabs.com/camptocamp/mcollective))
+* [Augeas](https://github.com/camptocamp/puppet-augeas) ([Forge](http://forge.puppetlabs.com/camptocamp/augeas))
 
 ## Contributing
 
