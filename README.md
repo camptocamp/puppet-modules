@@ -2,6 +2,8 @@
 
 These modules are provided by [Camptocamp](http://www.camptocamp.com/)
 
+This repository is a collection of Puppet modules provided by Camptocamp which are supported, thoroughly tested and present on the Puppet Forge.
+
 ## Module list
 
 * [Mcollective](https://github.com/camptocamp/puppet-mcollective) ([Forge](http://forge.puppetlabs.com/camptocamp/mcollective)) [![Build Status](https://travis-ci.org/camptocamp/puppet-mcollective.png?branch=master)](https://travis-ci.org/camptocamp/puppet-mcollective)
