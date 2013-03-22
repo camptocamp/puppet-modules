@@ -4,9 +4,10 @@ These modules are provided by [Camptocamp](http://www.camptocamp.com/)
 
 ## Module list
 
-* [Mcollective](https://github.com/camptocamp/puppet-mcollective) ([Forge](http://forge.puppetlabs.com/camptocamp/mcollective))
-* [Augeas](https://github.com/camptocamp/puppet-augeas) ([Forge](http://forge.puppetlabs.com/camptocamp/augeas))
-* [Buildenv](https://github.com/camptocamp/puppet-buildenv) ([Forge](http://forge.puppetlabs.com/camptocamp/buildenv))
+* [Mcollective](https://github.com/camptocamp/puppet-mcollective) ([Forge](http://forge.puppetlabs.com/camptocamp/mcollective)) [![Build Status](https://travis-ci.org/camptocamp/puppet-mcollective.png?branch=master)](https://travis-ci.org/camptocamp/puppet-mcollective)
+* [Augeas](https://github.com/camptocamp/puppet-augeas) ([Forge](http://forge.puppetlabs.com/camptocamp/augeas)) [![Build Status](https://travis-ci.org/camptocamp/puppet-augeas.png?branch=master)](https://travis-ci.org/camptocamp/puppet-augeas)
+* [Buildenv](https://github.com/camptocamp/puppet-buildenv) ([Forge](http://forge.puppetlabs.com/camptocamp/buildenv)) [![Build Status](https://travis-ci.org/camptocamp/puppet-buildenv.png?branch=master)](https://travis-ci.org/camptocamp/puppet-buildenv)
+* [Ruby](https://github.com/camptocamp/puppet-ruby) ([Forge](http://forge.puppetlabs.com/camptocamp/ruby)) [![Build Status](https://travis-ci.org/camptocamp/puppet-ruby.png?branch=master)](https://travis-ci.org/camptocamp/puppet-ruby)
 
 ## Contributing
 
