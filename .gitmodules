@@ -4,3 +4,6 @@
 [submodule "puppet-augeas"]
 	path = puppet-augeas
 	url = git@github.com:camptocamp/puppet-augeas.git
+[submodule "puppet-buildenv"]
+	path = puppet-buildenv
+	url = git@github.com:camptocamp/puppet-buildenv.git

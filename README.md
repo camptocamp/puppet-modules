@@ -6,6 +6,7 @@ These modules are provided by [Camptocamp](http://www.camptocamp.com/)
 
 * [Mcollective](https://github.com/camptocamp/puppet-mcollective) ([Forge](http://forge.puppetlabs.com/camptocamp/mcollective))
 * [Augeas](https://github.com/camptocamp/puppet-augeas) ([Forge](http://forge.puppetlabs.com/camptocamp/augeas))
+* [Buildenv](https://github.com/camptocamp/puppet-buildenv) ([Forge](http://forge.puppetlabs.com/camptocamp/buildenv))
 
 ## Contributing
 
