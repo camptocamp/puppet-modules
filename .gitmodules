@@ -10,3 +10,6 @@
 [submodule "puppet-ruby"]
 	path = puppet-ruby
 	url = git@github.com:camptocamp/puppet-ruby.git
+[submodule "puppet-public_ipaddress"]
+	path = puppet-public_ipaddress
+	url = git@github.com:camptocamp/puppet-public_ipaddress.git

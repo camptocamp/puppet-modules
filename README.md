@@ -10,6 +10,7 @@ This repository is a collection of Puppet modules provided by Camptocamp which a
 * [Augeas](https://github.com/camptocamp/puppet-augeas) ([Forge](http://forge.puppetlabs.com/camptocamp/augeas)) [![Build Status](https://travis-ci.org/camptocamp/puppet-augeas.png?branch=master)](https://travis-ci.org/camptocamp/puppet-augeas)
 * [Buildenv](https://github.com/camptocamp/puppet-buildenv) ([Forge](http://forge.puppetlabs.com/camptocamp/buildenv)) [![Build Status](https://travis-ci.org/camptocamp/puppet-buildenv.png?branch=master)](https://travis-ci.org/camptocamp/puppet-buildenv)
 * [Ruby](https://github.com/camptocamp/puppet-ruby) ([Forge](http://forge.puppetlabs.com/camptocamp/ruby)) [![Build Status](https://travis-ci.org/camptocamp/puppet-ruby.png?branch=master)](https://travis-ci.org/camptocamp/puppet-ruby)
+* [Public\_Ipaddress](https://github.com/camptocamp/puppet-public_ipaddress) ([Forge](http://forge.puppetlabs.com/camptocamp/public_ipaddress)) [![Build Status](https://travis-ci.org/camptocamp/puppet-public_ipaddress.png?branch=master)](https://travis-ci.org/camptocamp/puppet-public\_ipaddress)
 
 ## Contributing
 
