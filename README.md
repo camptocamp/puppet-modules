@@ -13,6 +13,7 @@ This repository is a collection of Puppet modules provided by Camptocamp which a
 * [Public\_Ipaddress](https://github.com/camptocamp/puppet-public_ipaddress) ([Forge](http://forge.puppetlabs.com/camptocamp/public_ipaddress)) [![Build Status](https://travis-ci.org/camptocamp/puppet-public_ipaddress.png?branch=master)](https://travis-ci.org/camptocamp/puppet-public\_ipaddress)
 * [Ruby](https://github.com/camptocamp/puppet-ruby) ([Forge](http://forge.puppetlabs.com/camptocamp/ruby)) [![Build Status](https://travis-ci.org/camptocamp/puppet-ruby.png?branch=master)](https://travis-ci.org/camptocamp/puppet-ruby)
 
+
 ## Contributing
 
 Please report bugs and features using each module's Github issue tracker.
