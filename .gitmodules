@@ -13,3 +13,6 @@
 [submodule "puppet-public_ipaddress"]
 	path = puppet-public_ipaddress
 	url = git@github.com:camptocamp/puppet-public_ipaddress.git
+[submodule "puppet-bind"]
+	path = puppet-bind
+	url = git@github.com:camptocamp/puppet-bind.git
