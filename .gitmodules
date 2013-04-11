@@ -1,36 +1,18 @@
-[submodule "puppet-mcollective"]
-	path = puppet-mcollective
-	url = git@github.com:camptocamp/puppet-mcollective.git
-[submodule "puppet-augeas"]
-	path = puppet-augeas
-	url = git@github.com:camptocamp/puppet-augeas.git
-[submodule "puppet-buildenv"]
-	path = puppet-buildenv
-	url = git@github.com:camptocamp/puppet-buildenv.git
-[submodule "puppet-ruby"]
-	path = puppet-ruby
-	url = git@github.com:camptocamp/puppet-ruby.git
-[submodule "puppet-public_ipaddress"]
-	path = puppet-public_ipaddress
-	url = git@github.com:camptocamp/puppet-public_ipaddress.git
-[submodule "puppet-bind"]
-	path = puppet-bind
-	url = git@github.com:camptocamp/puppet-bind.git
 [submodule "mcollective"]
 	path = mcollective
-	url = git@github.com:camptocamp/puppet-mcollective.git
+	url = git://github.com/camptocamp/puppet-mcollective.git
 [submodule "augeas"]
 	path = augeas
-	url = git@github.com:camptocamp/puppet-augeas.git
+	url = git://github.com/camptocamp/puppet-augeas.git
 [submodule "bind"]
 	path = bind
-	url = git@github.com:camptocamp/puppet-bind.git
+	url = git://github.com/camptocamp/puppet-bind.git
 [submodule "buildenv"]
 	path = buildenv
-	url = git@github.com:camptocamp/puppet-buildenv.git
+	url = git://github.com/camptocamp/puppet-buildenv.git
 [submodule "public_ipaddress"]
 	path = public_ipaddress
-	url = git@github.com:camptocamp/puppet-public_ipaddress.git
+	url = git://github.com/camptocamp/puppet-public_ipaddress.git
 [submodule "ruby"]
 	path = ruby
-	url = git@github.com:camptocamp/puppet-ruby.git
+	url = git://github.com/camptocamp/puppet-ruby.git
