@@ -22,3 +22,6 @@
 [submodule "augeas"]
 	path = augeas
 	url = git@github.com:camptocamp/puppet-augeas.git
+[submodule "bind"]
+	path = bind
+	url = git@github.com:camptocamp/puppet-bind.git
