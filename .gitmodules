@@ -16,3 +16,6 @@
 [submodule "puppet-bind"]
 	path = puppet-bind
 	url = git@github.com:camptocamp/puppet-bind.git
+[submodule "mcollective"]
+	path = mcollective
+	url = git@github.com:camptocamp/puppet-mcollective.git
