@@ -16,3 +16,6 @@
 [submodule "ruby"]
 	path = ruby
 	url = git://github.com/camptocamp/puppet-ruby.git
+[submodule "openssl"]
+	path = openssl
+	url = https://github.com/camptocamp/puppet-openssl.git
