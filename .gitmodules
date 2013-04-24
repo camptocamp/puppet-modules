@@ -19,3 +19,6 @@
 [submodule "openssl"]
 	path = openssl
 	url = https://github.com/camptocamp/puppet-openssl.git
+[submodule "dhcp"]
+	path = dhcp
+	url = git://github.com/raphink/puppet-dhcp.git
