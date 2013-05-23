@@ -22,3 +22,6 @@
 [submodule "dhcp"]
 	path = dhcp
 	url = git://github.com/camptocamp/puppet-dhcp.git
+[submodule "logstash"]
+	path = logstash
+	url = git://github.com/camptocamp/puppet-logstash.git
