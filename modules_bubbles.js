@@ -68,12 +68,22 @@ d3.json(url, function(d) {
   node.append("title")
       .text(function(d) { return "module: " + d.id + "\n" + d.data.downloads.toLocaleString() + " downloads\n" + d.data.releases.length.toLocaleString() + " releases"; });
 
+  node.append("image")
+      .attr("clip-path", function(d) { return "url(#clip-" + d.id + ")"; })
+      .attr("xlink:href", "tag.svg")
+      .attr("width", function(d) { return d.data.releases.length })
+      .attr("height", function(d) { return d.data.releases.length })
+      .attr("x", function(d) { return d.r/5; })
+      .attr("y", function(d) { return d.r/6 })
+      .text(function(d) { return d.data.releases.length.toLocaleString() + " releases"; });
+
   document.getElementById('loading').style.display = 'none';
 
   root.each(function(d) {
       d3.json("https://api.github.com/repos/camptocamp/puppet-"+d.id+"/contributors", function(resp) {
           d.contributors = resp || [];
           d.addcontribs = true;
+          d.contribsize = Math.min(d.contributors.length * 2, 0.9*d.r)
           updateContributors();
       });
   });
@@ -84,10 +94,10 @@ d3.json(url, function(d) {
         .append("image")
         .attr("clip-path", function(d) { return "url(#clip-" + d.id + ")"; })
         .attr("xlink:href", "octocat.svg")
-        .attr("width", function(d) { return d.contributors.length * 2 })
-        .attr("height", function(d) { d.addcontribs = false; return d.contributors.length * 2 })
+        .attr("width", function(d) { return d.contribsize })
+        .attr("height", function(d) { d.addcontribs = false; return d.contribsize })
         .attr("x", function(d) { return -d.r/2; })
-        .attr("y", 2)
+        .attr("y", function(d) { return d.r/6 })
         .append("title")
           .text(function(d) { return d.contributors.length + " contributors:\n" + d.contributors.map(c => "  - " + c.login + "\n").join(""); })
   }
