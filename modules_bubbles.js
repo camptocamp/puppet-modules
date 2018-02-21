@@ -22,6 +22,7 @@ d3.json(url, function(d) {
         } else {
             d.endorsement = 'none';
         }
+        d.contributors = [];
         d.id = d.data.name;
     });
 
@@ -44,7 +45,9 @@ d3.json(url, function(d) {
   node.append("text")
       .attr("clip-path", function(d) { return "url(#clip-" + d.id + ")"; })
     .selectAll("tspan")
-    .data(function(d) { return [d.id]; })
+    .data(function(d) {
+        return [d.id];
+    })
     .enter().append("tspan")
       .attr("x", 0)
       .attr("y", function(d, i, nodes) { return 13 + (i - nodes.length / 2 - 0.5) * 10; })
@@ -54,4 +57,26 @@ d3.json(url, function(d) {
       .text(function(d) { return "module: " + d.id + "\n" + d.data.downloads.toLocaleString() + " downloads\n" + d.data.releases.length.toLocaleString() + " releases"; });
 
   document.getElementById('loading').style.display = 'none';
+
+  root.each(function(d) {
+      d3.json("https://api.github.com/repos/camptocamp/puppet-"+d.id+"/contributors", function(resp) {
+          d.contributors = resp || [];
+          d.addcontribs = true;
+          updateContributors();
+      });
+  });
+
+  function updateContributors() {
+    node.data(pack(root).leaves())
+        .filter(function(d) { return d.addcontribs })
+        .append("image")
+        .attr("clip-path", function(d) { return "url(#clip-" + d.id + ")"; })
+        .attr("xlink:href", "octocat.svg")
+        .attr("width", function(d) { return d.contributors.length * 2 })
+        .attr("height", function(d) { d.addcontribs = false; return d.contributors.length * 2 })
+        .attr("x", 0)
+        .attr("y", 0)
+        .append("title")
+          .text(function(d) { console.log(d.contributors); return d.contributors.length + " contributors:\n" + d.contributors.map(c => "  - " + c.login + "\n"); })
+  }
 });
