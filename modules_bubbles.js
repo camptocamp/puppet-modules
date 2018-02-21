@@ -55,6 +55,7 @@ d3.json(url, function(d) {
 
   node.append("text")
       .attr("clip-path", function(d) { return "url(#clip-" + d.id + ")"; })
+      .attr("font-size", function(d) { return d.r/3 + "px" })
     .selectAll("tspan")
     .data(function(d) {
         return [d.id];
