@@ -77,6 +77,6 @@ d3.json(url, function(d) {
         .attr("x", 0)
         .attr("y", 0)
         .append("title")
-          .text(function(d) { console.log(d.contributors); return d.contributors.length + " contributors:\n" + d.contributors.map(c => "  - " + c.login + "\n"); })
+          .text(function(d) { return d.contributors.length + " contributors:\n" + d.contributors.map(c => "  - " + c.login + "\n").join(""); })
   }
 });
