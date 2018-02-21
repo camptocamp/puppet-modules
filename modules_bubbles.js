@@ -4,7 +4,6 @@ var svg = d3.select("svg#modules_bubbles"),
 
 var format = d3.format(",d");
 
-var color = d3.scaleOrdinal(d3.schemeCategory10);
 
 var pack = d3.pack()
     .size([width, height])
@@ -15,7 +14,7 @@ d3.json(url, function(d) {
   classes = d.results;
 
   var root = d3.hierarchy({children: classes})
-    .sum(function(d) { return d.downloads; })
+    .sum(function(d) { return Math.sqrt(d.downloads); })
     .each(function(d) {
         if (d.data.endorsement) {
             d.endorsement = d.data.endorsement;
@@ -35,7 +34,19 @@ d3.json(url, function(d) {
   node.append("circle")
       .attr("id", function(d) { return d.id; })
       .attr("r", function(d) { return d.r; })
-      .style("fill", function(d) { return color(d.endorsement); });
+      .style("fill", function(d) {
+        switch(d.endorsement) {
+          case 'approved':
+            return '#53d4b0';
+            break;
+          case 'supported':
+            return '#ffae1a';
+            break;
+          default:
+            return '#59a1f7';
+            break;
+        }
+      });
 
   node.append("clipPath")
       .attr("id", function(d) { return "clip-" + d.id; })
@@ -74,8 +85,8 @@ d3.json(url, function(d) {
         .attr("xlink:href", "octocat.svg")
         .attr("width", function(d) { return d.contributors.length * 2 })
         .attr("height", function(d) { d.addcontribs = false; return d.contributors.length * 2 })
-        .attr("x", 0)
-        .attr("y", 0)
+        .attr("x", function(d) { return -d.r/2; })
+        .attr("y", 2)
         .append("title")
           .text(function(d) { return d.contributors.length + " contributors:\n" + d.contributors.map(c => "  - " + c.login + "\n").join(""); })
   }
