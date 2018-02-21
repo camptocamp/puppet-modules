@@ -1,4 +1,4 @@
-var svg = d3.select("svg"),
+var svg = d3.select("svg#modules_bubbles"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
 
@@ -52,4 +52,6 @@ d3.json(url, function(d) {
 
   node.append("title")
       .text(function(d) { return "module: " + d.id + "\n" + d.data.downloads.toLocaleString() + " downloads\n" + d.data.releases.length.toLocaleString() + " releases"; });
+
+  document.getElementById('loading').style.display = 'none';
 });
