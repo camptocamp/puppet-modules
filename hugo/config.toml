@@ -13,7 +13,7 @@ theme = "elate"
   email = ""
   # Navigation
   [params.navigation]
-    brand = "Camptocamp Puppet Modules"
+    brand = "Camptocamp's Puppet Modules"
     #intro = "<i class='icon-home'></i>Install"
     #work = "<i class='icon-camera'></i>Screenshots"
     #testimonials = "<i class='icon-bubbles'></i>Testimonials"
@@ -34,6 +34,16 @@ theme = "elate"
   [params.intro]
 
   [[params.intro.item]]
+    title = "Install"
+    description = '''
+```shell
+$ puppet module install camptocamp/<module_name>
+```
+'''
+    icon = "icon-rocket"
+
+
+  [[params.intro.item]]
     title = "Forge Modules"
     description = '''
 Camptocamp maintains tens of modules on the Puppet Forge
@@ -45,23 +55,7 @@ Camptocamp maintains tens of modules on the Puppet Forge
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="js/modules_bubbles.js"></script>
 '''
-    #url = "#"
-    #button = "Get In Touch"
     icon = "icon-bulb"
-    img = "img_7.jpg"
-
-  [[params.intro.item]]
-    title = "Install"
-    description = '''
-```shell
-$ puppet module install camptocamp/<module_name>
-```
-'''
-    #url = "#"
-    #button = "Why us?"
-    icon = "icon-rocket"
-  #  img = "img_10.jpg"
-
 
   # About section
   [params.about]
