@@ -28,3 +28,6 @@
 [submodule "postfix"]
 	path = postfix
 	url = https://github.com/camptocamp/puppet-postfix.git
+[submodule "hugo/themes/elate"]
+	path = hugo/themes/elate
+	url = git@github.com:camptocamp/hugo-elate-theme.git
