@@ -64,6 +64,17 @@ Camptocamp maintains tens of modules on the Puppet Forge
     description = "We love to contribute Open Source projects at Camptocamp.<br /> Here is a list of some of our most useful tools"
 
     [[params.about.item]]
+      name = "FacterDB"
+      position = "A Database of OS facts provided by Facter"
+      description = ""
+      img = "facterdb.png"
+      alt = "FacterDB"
+      social = [
+        ["icon-globe", "https://camptocamp.github.io/facterdb"],
+        ["icon-home", "https://rubygems.org/gems/facterdb"]
+      ]
+
+    [[params.about.item]]
       name = "Terraboard"
       position = "A Web dashboard to inspect and query Terraform states"
       description = ""
